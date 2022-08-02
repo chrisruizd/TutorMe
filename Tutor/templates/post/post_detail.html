@@ -1,0 +1,31 @@
+{% extends "post/base.html" %}
+
+{% block body %}
+    
+    <article class="media content-section">
+        <img class="rounded-circle article-img" src="{{ object.author.profile.image.url }}" alt="{{'media/default.jpg'}}">
+        <div class="media-body">
+            <div class="article-metadata">
+                <a class="mr-2" href="{% url 'profile-detail' post.id %}"><em>@{{ object.author }}</em></a>
+                <small class="text-muted">{{ object.date }}</small>
+                {% if object.author.profile.account_Type != 'none' %}
+                    <span class="badge text-bg m-2">{{ object.author.profile.account_Type }}</span>
+                {% endif %}
+
+                {% if object.author == user %}
+                    <div>
+                        <a id="spc" class="btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'post-update' object.id %}">Update</a>
+                        <a id="spc" class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'post-delete' object.id %}">Delete</a>
+                    </div>
+                {% endif %}
+            </div>
+            <h2 class="article-title">{{ object.title }}</h2>
+            <p class="article-content">{{ object.content }}</p>
+            <div class="allPost">
+                <a href="{% url 'user-posts' object.author.username %}"><em>All posts by @{{ object.author }}</em></a>
+            </div>
+        </div>
+    </article>
+    
+
+{% endblock %}

@@ -1,0 +1,170 @@
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+  font-family: Times New Roman;
+  
+}
+
+ul {
+  margin: 0;
+}
+
+.bg-steel {
+  background-color: #580404;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+.icons{
+  text-align: center;
+  text-shadow: #333;
+  
+}
+#pimage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 50%;
+  
+}
+
+.social-icon{
+  color: gray;
+  width: 50px;
+  padding: 2px;
+  font-size: 35px;
+  
+}
+.social-icon:hover{
+  color: rgb(61, 60, 60)
+}
+
+.allPost{
+  text-align: right;
+  
+}
+.badge{
+  color: #ffffff;
+  background-color: #580404;
+  
+}
+
+
+#title{
+  font-family: Lucida Handwriting;
+}
+
+.btn{
+  color: #580404;
+  border-color: #580404;
+  background-color: #ffffff;
+}
+.btn:hover{
+  background-color: #580404;
+  color: #ffffff;
+  
+  
+}
+#special_bt{
+  background-color: #580404;
+  color: #ffffff;
+  border-color: #ffffff;
+  
+  
+}
+#special_bt:hover{
+  color: #580404;
+  border-color: #940808;
+  background-color: #ffffff;
+}
+#spc:hover{
+  background-color: #580404;
+  color: #ffffff;
+}
+#unlike{
+  color: rgb(206, 0, 0);
+  border-color: white;
+  
+}
+#unlike:hover{
+  color: rgb(255, 55, 55);
+  background-color: #ffffff;
+}
+#like{
+  border-color: white;
+}
+#like:hover{
+  background-color: #ffffff;
+  color: rgb(250, 57, 57);
+}

@@ -1,0 +1,17 @@
+{% extends "post/base.html" %}
+
+{% block body %} 
+    <h2 style="color:#580404;"><em>Followed Accounts</em></h2>
+    {% for follower in data %}
+        
+        <article class="media content-section">
+            <img class="rounded-circle article-img" src="{{ follower.user.profile.image.url }}" alt="{{'media/default.jpg'}}">
+            {% if follower.user.first_name and follower.user.last_name %}
+                {{follower.user.first_name}} {{follower.user.last_name}}
+            {% else %}
+                <em>@{{follower.user}}</em>
+            {% endif %}
+        </article>
+        
+    {% endfor %} 
+{% endblock %}
